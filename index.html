@@ -6,48 +6,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>veeb ja meedia</title>
-
     <script src="scripts/livejs.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 
+    <!-- ss ei pea panema kõigile a elemendile blank target -->
+    <!-- _self (leht asnedatakse); _blank (uuel vahelehel) -->
+    <!-- def on _self -->
+    <base target="_blank">
+    <!-- <base href="https://www.youtube.com/"> -->
 </head>
 
 <body>
 
     <header>
+        <!--pildi lisamine  -->
+        <div class="center-pic"><img src="media/pictures/page/veebjameedia_banner.png" alt="Lehe bänner pilt"></div>
         <h1>Äge veebi leht!</h1>
-        <p>Õpetöö teema... igno pls.</p>
-        <hr>
-    </header>
+        <details open>
+            <summary>see leht on jama</summary>
+            <p>Õpetöö teema... igno pls.</p>
+        </details>
 
+        <nav>
+            <ul>
+                <li><a href="https://www.tlu.ee/">TLU</a></li>
+                <li><a href="https://forte.delfi.ee/" target="_self">delfi forte</a></li>
+                <!-- lehel liikumine -->
+                <li><a href="#media" target="_self">Media</a></li>
+            </ul>
+        </nav>
+
+    </header>
 
     <!-- main elment on pea kontendile, korraga võib nähtaval olla yks  -->
     <main>
-        <section> <!-- article //  aside-->
-            <h2>Veebis kasutatakse</h2>
+
+        <section>
+            <!-- article //  aside-->
+            <div id="img-border">
+                <h2>Veebis kasutatakse</h2>
                 <ol>
                     <li>
                         teksti
-                            <ul>
-                                <li>pealkiri</li>
-
-                                <li>liste</li>
-                                <li>tava</li>
-                            </ul>
+                        <ul>
+                            <li>pealkiri</li>
+                            <li>liste</li>
+                            <li>tava</li>
+                        </ul>
                     </li>
                     <li>heli</li>
                     <li>pilti</li>
                     <li>jne...</li>
                 </ol>
-            <hr>
+                <hr>
                 <dl>
                     <dt>asd</dt> <!-- definition -->
-                        <dd> asd</dd> <!-- descripton -->
+                    <dd> asd</dd> <!-- descripton -->
                 </dl>
+            </div>
         </section>
+
+        <section>
+            <div id="img-border">
+                <h2>Vaated ülikoolile</h2>
+                <figure>
+                    <img src="http://greeny.cs.tlu.ee/~rinde/media/photos/TLU_600x400/tlu_42.jpg"
+                        alt="Pilt ülikooli uksest">
+                    <figcaption>Pilt ülikoolu uksest</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="http://greeny.cs.tlu.ee/~rinde/media/photos/TLU_600x400/tlu_4.jpg"
+                        alt="Pilt Mare maja aatriumist">
+                    <figcaption>Pilt Mare maja aatriumist</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- siia liikumine läbi a elemendi -->
+        <section id="media">
+            <div id="img-border">
+                <h2>Meedia veebilehel</h2>
+                <p>veebis saab kasutada heli ja videot</p>
+
+                <h3>Heli</h3>
+                <audio controls preload="auto">
+                    <!-- wav; ogg; mp3 (audio/mpeg); m4a -->
+                    <source src="http://greeny.cs.tlu.ee/~rinde/media/sounds/Thomas_Edison_Mary_had_lamb.ogg"
+                        type="audio/ogg">
+                    Kahjuks teie veebibrauser ei toeta HTML5 audio elementi!
+                </audio>
+
+                <h3>Video</h3>
+                <video controls poster="http://greeny.cs.tlu.ee/~rinde/media/videos/tlu_annab_hariduse.jpg" width="600"
+                    preload="auto">
+                    <!-- mp4 (video/mp4); ogv (video/ogg); WebM (video/WebM) -->
+                    <source src="http://greeny.cs.tlu.ee/~rinde/media/videos/haridusvalgustab.mp4" type="video/mp4">
+                    Kahjuks teie veebibrauser ei toeta HTML5 video elementi!
+                </video>
+                <p></p>
+            </div>
+        </section>
+
+        <section id="gaudeamus">
+            <div id="img-border">
+                <h2>Gaudeamus</h2>
+                <pre>
+:,: Gaudeamus igitur
+juvenes dum sumus! :,:
+Post jucundam juventutem,
+post molestam senectutem
+:,: nos habebit humus! :,:
+
+:,: Ubi sunt, qui ante nos
+in mundo fuere? :,:
+Vadite ad superos,
+transite ad inferos,
+:,: ubi iam fuere. :,:
+
+:,: Vita nostra brevis est,
+brevi finietur. :,:
+Venit mors velociter,
+rapit nos atrociter,
+:,: nemini parcetur. :,:
+
+:,: Vivat academia,
+vivant professores! :,:
+Vivat membrum quodlibet,
+vivant membra quaelibet,
+:,: semper sint in flore! :,:
+
+:,: Vivant omnes virgines
+faciles, formosae! :,:
+Vivant et mulieres
+tenerae, amabiles,
+:,: atque laboriosae! :,:
+
+:,: Vivat et respublica
+et qui illam regit! :,:
+Vivat nostra civitas,
+maecenatum caritas,
+:,: quae nos hic protegit! :,:
+
+:,: Pereat tristitia,
+pereant osores! :,:
+Pereat diabolus,
+quivis antiburschius,
+:,: atque irrisores! :,:
+                </pre>
+            </div>
+        </section>
+
     </main>
-        
-    <footer style="bottom: 0; margin-top: 50%;">
-        <hr>
+
+    <footer>
         <p>TLU 2022 DTI</p>
     </footer>
 

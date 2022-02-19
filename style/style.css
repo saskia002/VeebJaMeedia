@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 920px;
+    max-width: 920px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url(https://greeny.cs.tlu.ee/~rinde/media/pics/tlu_h200.png);
+    background-repeat: no-repeat;
+    background-position: 98.5% 2%;
+    background-attachment: fixed;
+    background-size: 30px;
+
+    color: black;
+    background-color: white;
+}
+
+section{
+    background-image: url(https://greeny.cs.tlu.ee/~rinde/media/pics/top_left_01_transparent.png), url(https://greeny.cs.tlu.ee/~rinde/media/pics/top_right_01_transparent.png), url(https://greeny.cs.tlu.ee/~rinde/media/pics/bottom_right_01_transparent.png), url(https://greeny.cs.tlu.ee/~rinde/media/pics/bottom_left_01_transparent.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: top left, top right, bottom right, bottom left;
+    margin: 2%;
+}
+
+main{
+    height: 100%;
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+	align-items:center;
+	font-size: 14px;
+	bottom: 0;
+    border-top-style: solid;
+    border-color: black;
+    border-width: 1px;
+    font-size: 12px;
+}
+
+header{
+    border-style: hidden;
+    border-bottom-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+hr{
+    margin: 2%;
+}
+
+p{
+    font-size: 1.15em;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+
+
+footer, header{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+main, header, footer{
+    background-color: bisque;
+}
+
+
+.center-pic{
+    text-align: center;
+}
+
+#img-border{
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0);
+    border-left-width: 30px;
+    border-right-width: 20px;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+}

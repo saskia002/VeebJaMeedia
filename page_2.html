@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veeb ja meedia</title>
+    <script src="scripts/livejs.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <base target="_blank">
+</head>
+
+<body>
+
+    <header>
+        <!--pildi lisamine  -->
+        <div class="center-pic"><img src="media/pictures/page/veebjameedia_banner.png" alt="Lehe bänner pilt"></div>
+        <h1>Eelmise semestri õppetöö</h1>
+        <p>Siim Kriibi 2022</p>
+    
+        <nav>
+            <ul>
+                <li><a href="index" target="_self">Avaleht</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="img-border">
+                <h2>Andmebaaside projekteerimine</h2>
+                <p>Õppisime andmebaase, andmebaasihalduse süsteemidest ning andmemudeleid.</p>
+                <figure>
+                    <img src="media/pictures/page_2/AB.png" alt="Pilt AB varesejala skeemist" height="300px">
+                    <figcaption>Pilt rühmatöö varesejala notatsioonist.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div id="img-border">
+                <h2>Digipad</h2>
+                <p>Õppisime õigeid viise kuidas kasutada <i>exelilt</i>, <i>wordi</i> ja <i>powerpointi</i></p>
+                <figure>
+                    <video controls preload="auto" width="400px">
+                        <source src="media/pictures/page_2/baddaysm.mp4" type='video/mp4'>
+                        Kahjuks teie veebibrauser ei toeta HTML5 video elementi!
+                    </video>
+                    <figcaption>Tavaline kontori töötaja.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div id="img-border">
+                <h2>Operatsioonisüsteemide alused ja haldamine</h2>
+                <p>Õppisime kuidas arvuti op-süsteemid töötavad, ning kuidas linux on parem opsys kui windows.</p>
+                <details>
+                    <summary>Näide linuxi bash skriptist:</summary>
+                    <pre>
+#!/bin/bash
+echo Miks ma vale gnome alla tõmbasin?
+echo ------------------------
+read -p 'Vastus: ' Vastus
+echo ------------------------
+echo Sinu vastus oli: $Vastus
+echo ------------------------
+echo Jätkan skripti tööga, kustutan mitte vajavad programmid ära!
+echo ------------------------
+
+PKGS2=(
+'sushi'
+'sddm-kcm'
+'simple-scan'
+'totem'
+'tali'
+'ufw'
+'vino'
+'quadrapassel'
+'reflector'
+'polari'
+'ocs-url'
+'okular'
+'orca'
+'lightsoff'
+'hitori'
+'iagno'
+'geary'
+'ghex'
+'five-or-more'
+'four-in-a-row'
+'file-roller'
+'swell-foop'
+'gnome-books'
+'gnome-boxes'
+'gnome-builder'
+'gnome-chess'
+'gnome-games'
+'gnome-klotski'
+'gnome-mahjongg'
+'gnome-maps'
+'gnome-mines'
+'gnome-multi-writer'
+'gnome-music'
+'gnome-nibbles'
+'gnome-recipes'
+'gnome-robots'
+'gnome-sound-recorder'
+'gnome-sudoku'
+'gnome-taquin'
+'gnome-tetravex'
+'gnome-todo'
+'gnome-weather'
+'eog'
+'epiphany'
+'accerciser'
+'kde-applications'
+'discover'
+'devhelp'
+'evolution'
+'evolution'
+'evolution'
+)
+
+for PKG2 in "${PKGS2[@]}"; do
+    echo "DeINSTALLING: ${PKG2}"
+    sudo pacman -Rcns "$PKG2" --noconfirm
+done
+
+sudo pacman -R $(pacman -Qdtq) --noconfirm
+
+sudo pacman -S gnome-control-center --noconfirm --needed
+sudo pacman -S gnome-tweaks --noconfirm --needed
+
+git clone https://aur.archlinux.org/chrome-gnome-shell.git
+cd chrome-gnome-shell
+makepkg -si
+
+sudo pacman -Rcns cheese --noconfirm
+
+sudo pacman -S gnome-control-center --noconfirm --needed
+
+yay -S nautilus-admin --noconfirm --needed
+
+sudo pacman -S filemanager-actions --noconfirm --needed
+
+pacman -S nvidia --noconfirm --needed
+nvidia-xconfig
+
+gsettings set org.gnome.nautilus.preferences use-experimental-views false
+
+pacman -S --noconfirm intel-ucode
+proc_ucode=intel-ucode.img
+                    </pre>
+                </details>
+                <br>
+            </div>
+        </section>
+
+        <section>
+            <div id="img-border">
+                <h2>Praktiline matemaatika</h2>
+                <p>Õppisime matemaatikat, mida meil tuleviku töös võib vaja minna. Erinevad valemid, maatriksid jne.</p>
+                <figure>
+                    <video controls preload="auto" width="300px" poster="media/pictures/page_2/kutsa.jpg">
+                        <source src="media/pictures/page_2/video0-4-1.mp4" type='video/mp4'>
+                        Kahjuks teie veebibrauser ei toeta HTML5 video elementi!
+                    </video>
+                    <figcaption>Ütleme nii, et tunnis sai palju nalja.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div id="img-border">
+                <h2>Programmeerimise alused</h2>
+                <p>Õppisime <i>python</i> keelt, kuid rõhk oli sellel, et me saaks aru kuidas programmeerimine üldiselt töötab.</p>
+                <figure>
+                    <img src="media/pictures/page_2/PyKood.png" alt="Näide Py koodist">
+                    <figcaption>Näide minu Py koodist.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div id="img-border">
+                <h2>Veebiprogrammeerimine</h2>
+                <p>Õppisime väga palju huvitavat. Sain teada kuidas php keelt kasutada, html kuidas töötab ning ise tegin veidike css-i ka.</p>
+                <figure>
+                    <img src="media/pictures/page_2/VpMinuLeht.png" alt="VP2021 ühest valminud lehest pilt" height="600px">
+                    <figcaption>Pilt minu esilehest, mille kursuse jooksul valmistasin.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div id="img-border">
+                <h2>Õppimine kõrgkoolis</h2>
+                <p>Õppimine kõrgkoolis on Tallinna Ülikooli Digitehnoloogiate instituudi valdkonnapõhine üldpädevuste kujunemist toetav aine</p>
+                <figure>
+                    <video controls preload="auto" width="700px">
+                        <source src="media/pictures/page_2/Untitled.m4v" type="video/mp4">
+                        Kahjuks teie veebibrauser ei toeta HTML5 video elementi!
+                    </video>
+                    <figcaption>Rühmatöö. Video mille ma kokku monteerisin.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div id="img-border">
+                <br>
+                <table>
+                    <thead>
+                      <tr>
+                        <th colspan="2">Kasulikud lingid (WebDev)<br></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1.</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats">Media formats (Web)</a> </td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td><a href="https://validator.w3.org/">HTML5 code validator</a></td>
+                      </tr>
+                      <tr>
+                        <td>3.</td>
+                        <td><a href="https://www.tablesgenerator.com/html_tables#">HTML table generator</a></td>
+                      </tr>
+                      <tr>
+                        <td>4.</td>
+                        <td><a href="https://htmlcheatsheet.com/css/">CSS cheat sheet</a></td>
+                      </tr>
+                      <tr>
+                        <td>5.</td>
+                        <td><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS flexbox guide</a></td>
+                      </tr>
+                      <tr>
+                        <td>6.</td>
+                        <td><a href="https://www.w3schools.com/html/default.asp">HTML guide</a></td>
+                      </tr>
+                    </tbody>
+                    </table>
+                <br>
+            </div>
+        </section>
+
+    </main>
+        
+    <footer>
+        <p><a href="https://www.tlu.ee/dt">TLU 2022 DTI</a> | Siim Kriibi, <a href="mailto:siim02@tlu.ee">siim02@tlu.ee</a></p>
+    </footer>
+
+</body>
+
+</html>
