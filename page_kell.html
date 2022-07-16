@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/clock.css">
+    <link rel="stylesheet" href="style/style.css">
+	<script src="scripts/clock.js" defer></script>
+    <title>Kell</title>
+</head>
+<body>
+    <main>
+		<section id="time">
+			<h2>Ajanäitaja ehk kell</h2>
+			<p>Täna on: <span id="datePlace"></span></p>
+			
+			<input id="canChime" type="checkbox"><label for="canChime">Löö kella</label>
+			<button id="timeBtn" type="button">Ütle kellaaeg!</button>
+			
+			<div id="clockArea" class="clockArea">
+				<div id="clock" class="clock">
+					<img src="http://greeny.cs.tlu.ee/~rinde/media/pictures/kell/clock_box.png" alt="kellakast">
+					<img src="http://greeny.cs.tlu.ee/~rinde/media/pictures/kell/clock_pendulum.png" alt="kellapendel" id="pendulus" class="pendulus">
+					<div id="clockface" class="clockface">
+					<img src="http://greeny.cs.tlu.ee/~rinde/media/pictures/kell/clock_face.png" alt="kella numbrilaud">
+					<img src="http://greeny.cs.tlu.ee/~rinde/media/pictures/kell/hour_hand.png" alt="kella tunniseier" id="hourhand" class="clockhand ">
+					<img src="http://greeny.cs.tlu.ee/~rinde/media/pictures/kell/minute_hand.png" alt="kella minutiseier" id="minutehand" class="clockhand ">
+					<img src="http://greeny.cs.tlu.ee/~rinde/media/pictures/kell/second_hand.png" alt="kella sekundiseier" id="secondhand" class="clockhand ">
+					</div>
+					<img src="http://greeny.cs.tlu.ee/~rinde/media/pictures/kell/clock_frame.png" alt="kellakasti raam">
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

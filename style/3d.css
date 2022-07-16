@@ -1,0 +1,63 @@
+section {
+	height: 800px;
+}
+
+.area {
+	width: 1200px;
+	height: 600px;
+	border: 1px solid darkblue;
+	position: relative;
+	perspective-origin: 50% 50%;
+	perspective: 5000px;
+}
+
+.cube {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 400px;
+	top: 100px;
+	transform-style: preserve-3d;
+	transform: scale(.5);
+}
+
+.face {
+	position: inherit;
+	width: 400px;
+	height: 400px;
+	box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.8);
+	font-family: arial, sans-serif;
+	font-size: 40px;
+	text-align: center;
+	/*backface-visibility: hidden;*/
+}
+
+.front {
+	transform: translateZ(200px);
+	background-color: rgba(255, 0, 0, .4);
+}
+
+.back {
+	transform: translateZ(-200px) rotateY(180deg);
+	background-color: rgba(0, 255, 0, .4);
+}
+
+.top {
+	transform: translateY(-200px) rotateX(90deg);
+	background-color: rgba(0, 0, 255, .4);
+}
+
+.bottom {
+	transform: translateY(200px) rotateX(-90deg);
+	background-color: rgba(255, 255, 0, .4);
+}
+
+.left {
+	transform: translateX(200px) rotateY(90deg);
+	background-color: rgba(255, 0, 255, .4);
+}
+
+.right {
+	transform: translateX(-200px) rotateY(-90deg);
+	background-color: rgba(0, 255, 255, .4);
+}

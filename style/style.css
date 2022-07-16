@@ -1,88 +1,255 @@
-body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-width: 920px;
-    max-width: 920px;
-    min-height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 920px;
+  max-width: 920px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-image: url(https://greeny.cs.tlu.ee/~rinde/media/pics/tlu_h200.png);
-    background-repeat: no-repeat;
-    background-position: 98.5% 2%;
-    background-attachment: fixed;
-    background-size: 30px;
+  background-image: url(https://greeny.cs.tlu.ee/~rinde/media/pics/tlu_h200.png);
+  background-repeat: no-repeat;
+  background-position: 98.5% 2%;
+  background-attachment: fixed;
+  background-size: 30px;
 
-    color: black;
-    background-color: white;
+  color: black;
+  background-color: white;
 }
 
-section{
-    background-image: url(https://greeny.cs.tlu.ee/~rinde/media/pics/top_left_01_transparent.png), url(https://greeny.cs.tlu.ee/~rinde/media/pics/top_right_01_transparent.png), url(https://greeny.cs.tlu.ee/~rinde/media/pics/bottom_right_01_transparent.png), url(https://greeny.cs.tlu.ee/~rinde/media/pics/bottom_left_01_transparent.png);
-    background-repeat: no-repeat;
-    background-size: 50px;
-    background-position: top left, top right, bottom right, bottom left;
-    margin: 2%;
+/* navbar */
+
+nav {
+  /* pt; px;  % (arvutatakse vanem obj suurusest); cm (printer friendly)  */
+  /* width: 300px; */
+  height: 32px;
+  /* border: 10px solid white; */
+  /* box-sizing: border-box; */
+  top: 0;
+  position: sticky;
+  background-color: black;
+  /* Sticky , niikaua töötab relative aga kui kerides jõuab üles siis jääb üles ekraani ossa kinni */
+  /* fixed , sõidab lehega koguaeg kaasas, kerides (bänneritel kasutatakse) */
+  /* absolute , asukoht määratakse väga täpselt, kui pole ema elemendi pos määrtud siis on dokumendi suhtes */
+  /* relative , asukoht suhteline oma elemendi suhtes */
+  /* static (def, ei saa aru kordinaatidest) */
+  /* kordinaatite määramine */
+  /* left: 500px; */
+  justify-content: center;
+  display: flex;
 }
 
-main{
-    height: 100%;
+nav ul,
+nav li {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-footer{
-    margin-top: auto;
-    text-align: center;
-	align-items:center;
-	font-size: 14px;
-	bottom: 0;
-    border-top-style: solid;
-    border-color: black;
-    border-width: 1px;
-    font-size: 12px;
+nav ul {
+  background-color: gray;
 }
 
-header{
-    border-style: hidden;
-    border-bottom-style: solid;
-    border-color: black;
-    border-width: 1px;
+a {
+  margin: 0;
+  padding: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
-hr{
-    margin: 2%;
+a:visited {
+  color: white;
 }
 
-p{
-    font-size: 1.15em;
+a:link {
+  color: white;
 }
 
-table, th, td{
-    border: 2px solid black;
-    border-collapse: collapse;
-  }
-
-
-footer, header{
-    padding-left: 2%;
-    padding-right: 2%;
+a:hover {
+  color: red;
 }
 
-main, header, footer{
-    background-color: bisque;
+a:active {
+  color: white;
 }
 
+/* navbar */
 
-.center-pic{
-    text-align: center;
+section {
+  background-image: url(https://greeny.cs.tlu.ee/~rinde/media/pics/top_left_01_transparent.png),
+    url(https://greeny.cs.tlu.ee/~rinde/media/pics/top_right_01_transparent.png),
+    url(https://greeny.cs.tlu.ee/~rinde/media/pics/bottom_right_01_transparent.png),
+    url(https://greeny.cs.tlu.ee/~rinde/media/pics/bottom_left_01_transparent.png);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: top left, top right, bottom right, bottom left;
+  margin: 2%;
 }
 
-#img-border{
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0);
-    border-left-width: 30px;
-    border-right-width: 20px;
-    border-bottom-width: 10px;
-    border-top-width: 10px;
+main {
+  height: 100%;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+  bottom: 0;
+  border-top-style: solid;
+  border-color: black;
+  border-width: 1px;
+  font-size: 12px;
+}
+
+header {
+  border-style: hidden;
+  border-bottom-style: solid;
+  border-color: black;
+  border-width: 1px;
+
+  overflow: visible;
+}
+
+hr {
+  margin: 2%;
+}
+
+p {
+  font-size: 1.15em;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+footer,
+header {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+main,
+header,
+footer {
+  background-color: bisque;
+}
+
+.center-pic {
+  text-align: center;
+}
+
+#img-border {
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  border-left-width: 30px;
+  border-right-width: 20px;
+  border-bottom-width: 10px;
+  border-top-width: 3px;
+}
+
+/* viitab sellele, et see on piltidele ja kui punk on ees siis on klass */
+/* img.truck-rear-wheel */
+
+#stage {
+  width: 1188px;
+  height: 577px;
+  border: 1px solid black;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+#stage * {
+  position: absolute;
+}
+
+#windmill {
+  width: 308px;
+  height: 270px;
+  top: 20px;
+  transform: scale(0.5);
+  right: 70px;
+}
+
+#propeller {
+  top: -90px;
+}
+
+.truckarea {
+  width: 192px;
+  height: 86px;
+  top: 400px;
+}
+
+.truck {
+  width: 958px;
+  height: 429px;
+  transform-origin: top left;
+  transform: scale(0.2);
+}
+
+.truck_wheel {
+  bottom: -45px;
+}
+
+.truck_front_wheel {
+  right: 5px;
+}
+
+.truck_rear_wheel {
+  left: 85px;
+}
+
+/* pildid */
+
+.semitransparent {
+  opacity: 0.5;
+}
+
+.semitransparent:hover {
+  opacity: 1;
+}
+
+.transform1 {
+  /* x telg ja ss y telg */
+  /* scale - märgiga saab flippy */
+  transform: scale(-0.5, 0.5);
+}
+
+.transform2 {
+  /* translate liigutab obj orig. pos. suhtes //// translate(400px, -200px) */
+  transform: scale(-0.5, 0.5) rotate(-30deg) translate(-500px, -200px);
+}
+
+.transform3 {
+  /* kallutamine */
+  transform: skew(30deg);
+}
+
+.orig_bottomleft {
+  /* selle punkti, mille ümber teisendused toimuvad... def on: 50% 50% */
+  transform-origin: 0% 100%;
+}
+
+.transform1:hover, .transform2:hover, .transform3:hover {
+	transform: scale(1) rotate(0deg) translate(0px, 0px) skew(0deg);
+}
+
+.smooth {
+	/*transition*/
+	/* transition-property: all;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out; *//*ease  linear   ease-in   ease-out   ease-in-out*/
+	/* transition-delay: 2s; */
+	transition: all 2s ease-in-out;
 }

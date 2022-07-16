@@ -1,0 +1,118 @@
+body{
+	background-color: #8CC5FF;
+	font-family: verdana;
+	font-size: 1em;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+section{
+	/* border: 2px solid gray; */
+	border: 15px solid transparent;
+	padding: 20px;
+	/* border-image: url(../media/raam.png) 8% round; */
+	border-image: url(../media/raam.png) 40 round;
+}
+
+p{
+	color: darkblue !important;
+}
+
+/* FONT */
+
+@font-face {
+	font-family: "MCKLB";
+	src: url("./MCKLB.TTF");
+}
+
+/* FONT END */
+
+.main-heading, h1{
+	font-family: "MCKLB";
+	color: white;
+	display: inline-flex;
+	width: min-content;
+	padding: 0rem 4rem;
+	justify-content: center;
+	font-size: 3rem;
+	background-image: url(../media/pealkirja_pilv.png), url(../media/pealkirja_pilv.png);
+	background-repeat: no-repeat;
+	background-size: 50px;
+	background-position: left, right;
+}
+
+h2{
+	font-size: 1.8em;
+	font-family: "MCKLB";
+	color: white;
+	display: inline-flex;
+	width: min-content;
+	padding: 0rem 4rem;
+	justify-content: center;
+	background-image: url(../media/pealkirja_pilv.png), url(../media/pealkirja_pilv.png);
+	background-repeat: no-repeat;
+	background-size: 50px;
+	background-position: left, right;
+	white-space: pre-wrap;
+}
+
+.center-div{
+	display: flex;
+	justify-content: center;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0rem;
+	background-color: white;
+}
+
+/* respon disain */
+.maincontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	margin-bottom: 5rem;
+	margin-top: 2rem;
+}
+
+.maincontainer > section {
+	/* min-width: 360px; */
+	width: 400px;
+    flex-basis: 360px;
+    max-width: 100%;
+    flex-grow: 1;
+    min-height: 500px;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+/* IMG animatsioon */
+
+/* @keyframes MoveUpDown {
+	0%, 100% {
+	  transform: translateY(0%);
+	}
+	50% {
+	  transform: translateY(100%);
+	}
+  } */
+
+#cloudImg img{
+	/* animation: MoveUpDown 1s linear infinite; */
+	/* position: absolute; */
+	/* left: 0; */
+	/* bottom: 0; */
+	/* background-image: url(../media/pilved_1.jpg);
+	background-repeat: no-repeat; */
+	height: 350px;
+	width: min-content;
+}

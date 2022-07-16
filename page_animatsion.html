@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="et">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>veeb ja meedia</title>
+		<script src="scripts/livejs.js"></script>
+		<script src="scripts/animation.js" defer></script>
+		<link rel="stylesheet" type="text/css" href="style/style.css" />
+		<link rel="stylesheet" type="text/css" href="style/animation.css" />
+
+		<!-- ss ei pea panema kõigile a elemendile blank target -->
+		<!-- _self (leht asnedatakse); _blank (uuel vahelehel) -->
+		<!-- def on _self -->
+		<base target="_blank" />
+		<!-- <base href="https://www.youtube.com/"> -->
+		<style>
+			body {
+				min-width: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="nav_bar">
+			<ul>
+				<li><a href="https://www.tlu.ee/">TLU</a></li>
+				<li>
+					<a href="page_animatsion.html" target="_self"
+						>Animatsioon</a
+					>
+				</li>
+				<!-- lehel liikumine -->
+				<li><a href="#media" target="_self">Media</a></li>
+			</ul>
+		</nav>
+
+		<header>
+			<!--pildi lisamine  -->
+			<div class="center-pic">
+				<img
+					src="media/pictures/page/veebjameedia_banner.png"
+					alt="Lehe bänner pilt"
+				/>
+			</div>
+			<h1>Äge veebi leht!</h1>
+			<details open>
+				<summary>see leht on jama</summary>
+				<p>Õpetöö teema... igno pls.</p>
+			</details>
+		</header>
+
+		<!-- main elment on pea kontendile, korraga võib nähtaval olla yks  -->
+		<main>
+			<section id="comp">
+				<div id="stage">
+					<img
+						src="http://greeny.cs.tlu.ee/~rinde/media/pictures/maastik/Brorfelde_landscape_2_taeva_osa_veerand.png"
+						alt="taevas"
+						id="sky"
+					/>
+					<div id="windmill">
+						<img
+							src="http://greeny.cs.tlu.ee/~rinde/media/pictures/tuuleveski/tuuleveski_korpus.png"
+							alt="tuuleveski korpus"
+						/>
+						<img
+							id="propeller"
+							src="http://greeny.cs.tlu.ee/~rinde/media/pictures/tuuleveski/tuuleveski_tiivik.png"
+							alt="tuuleveski tiivik"
+							class="spinning"
+						/>
+					</div>
+					<img
+						src="http://greeny.cs.tlu.ee/~rinde/media/pictures/maastik/Brorfelde_landscape_2_maa_osa_veerand.png"
+						alt="maastik"
+						id="land"
+					/>
+
+					<div id="truckarea" class="truckarea">
+						<div id="truck" class="truck">
+							<img
+								src="http://greeny.cs.tlu.ee/~rinde/media/pictures/vana_veokas_01/smoke.png"
+								alt="suits"
+								class="smoke"
+							/>
+							<img
+								src="http://greeny.cs.tlu.ee/~rinde/media/pictures/vana_veokas_01/smoke.png"
+								alt="suits"
+								class="smoke2"
+							/>
+							<img
+								src="http://greeny.cs.tlu.ee/~rinde/media/pictures/vana_veokas_01/smoke.png"
+								alt="suits"
+								class="smoke3"
+							/>
+							<img
+								src="http://greeny.cs.tlu.ee/~rinde/media/pictures/vana_veokas_01/smoke.png"
+								alt="suits"
+								class="smoke4"
+							/>
+							<img
+								src="http://greeny.cs.tlu.ee/~rinde/media/pictures/vana_veokas_01/smoke.png"
+								alt="suits"
+								class="smoke5"
+							/>
+							<img
+								src="http://greeny.cs.tlu.ee/~rinde/media/pictures/vana_veokas_01/smoke.png"
+								alt="suits"
+								class="smoke6"
+							/>
+							<img
+								id="truck_body"
+								src="http://greeny.cs.tlu.ee/~rinde/media/pictures/vana_veokas_01/old_truck_3.png"
+								alt="veoauto kere"
+							/>
+							<img
+								id="truck_rear_wheel"
+								src="http://greeny.cs.tlu.ee/~rinde/media/pictures/vana_veokas_01/truck_wheel.png"
+								alt="veoauto tagaratas"
+								class="truck_wheel truck_rear_wheel"
+							/>
+							<img
+								id="truck_front_wheel"
+								src="http://greeny.cs.tlu.ee/~rinde/media/pictures/vana_veokas_01/truck_wheel.png"
+								alt="veoauto esiratas"
+								class="truck_wheel truck_front_wheel"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>TLU 2022 DTI</p>
+		</footer>
+	</body>
+</html>
+
+<!-- <table>
+    <thead>
+        <tr>
+            <th>Company</th>
+            <th>Country</th>
+            <th>Headquarters</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Microsoft</td>
+            <td>USA</td>
+            <td>Redmond, WA</td>
+        </tr>
+        <tr>
+            <td>Sony</td>
+            <td colspan="2">Tokyo Japan</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Name</td>
+            <td colspan="2">Address</td>
+        </tr>
+    </tfoot>
+</table> -->

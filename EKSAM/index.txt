@@ -1,0 +1,79 @@
+<h1>Pilved</h1>
+
+
+
+	<section>
+	<h2>Pilv</h2>
+	<p>Pilv on veeauru kondenseerumisel tekkinud hõljuvate veetilkade või jääkristallide nähtav kogum.</p>
+	</section>
+	<section>
+	<h2>Pilvede tekkimine</h2>
+	<p>Päiksepaistelise ilmaga tekitavad maapinnalt tõusev soojus ja niiskus niiske ja sooja õhu tõusvaid voole. Kui soe ja niiske õhk jõuab jahedama õhu vööndisse, siis hakkab veeaur kondenseeruma ja tekitab pilve.</p>
+	<p>Teistsugused pilved tekivad siis, kui soe ja niiske õhu front kohtub külma õhumassiga. Soe õhk kerkib jaheda õhu kohale ning hakkab seal jahenema. Kahe teineteisest radikaalselt erineva õhumassi piiril võivad tekkida katkematud pilveribad.</p>
+	<p>Pilv võib tekkida ka siis, kui niiske õhk tõuseb ja jahtub, ületades künkaid või mägesid.</p>
+	<p>Tavaliselt tekivad pilved troposfääris.</p>
+</section>
+	<section>
+	<h2>Pilvede liigitamine</h2>
+	<p>Pilvide klassifikatsiooni aluseks võib võtta pilvede tekkimise ning arenemise protsessid (geneetiline klassifikatsioon), pilveelementide suuruse jt karakteristikud (mikrofüüsikaline klassifikatsioon) või pilvede välimuse (morfoloogiline klassifikatsioon).</p>
+	<p>Tänapäeval kasutatakse enim morfoloogilist klassifikatsiooni, mille pakkus 1802. aasta lõpus või 1803. aasta alguses välja amatöörmeteoroloog Luke Howard. See sarnaneb Linné binaarsele nomenklatuurile.</p>
+	<p>Algselt jaotati pilved neljaks grupiks (modifikatsiooniks), mida tänapäeval nimetatakse klassideks. Neli algset gruppi olid rünkpilved (Cumulus), kihtpilved (Stratus), kiudpilved (Cirrus) ning sajupilved (Nimbus); neist viimast enam eraldi klassiks ei loeta.</p>
+	<p>Nüüdisajal liigitatakse pilved nende moodustumise, välimuse ja aluse kõrguse järgi kaheks kategooriaks (kihilised ja konvektiivsed pilved), neljaks klassiks (alumised, keskmised ja kõrged pilved ning konvektiivse (vertikaalse) arenguga pilved) ja kümneks põhiliigiks.</p>
+</section>
+	<section>
+	<h2>Pilvede liigid</h2>
+	
+		<li>Kategooria: kihilised pilved</li>
+
+			<li>Klass: alumised pilved
+			<li>St – kihtpilved (Stratus)</li>
+			
+			<li>Klass: keskmised pilved</li>
+
+				<li>Ac – kõrgrünkpilved (Altocumulus)</li>
+				<li>As – kõrgkihtpilved (Altostratus)</li>
+				<li>Ns – kihtsajupilved (Nimbostratus)</li>
+
+			
+			<li>Klass: kõrged pilved ehk ülemised pilved</li>
+
+				<li>Ci – kiudpilved (Cirrus)</li>
+				<li>Cc – kiudrünkpilved (Cirrocumulus)</li>
+				<li>Cs – kiudkihtpilved (Cirrostratus)</li>
+
+			
+
+		</li>
+		<li>Kategooria: konvektiivsed pilved
+
+			<li>Klass: konvektiivse (vertikaalse) arenguga pilved
+			<ul>
+				<li>Cu – rünkpilved (Cumulus)</li>
+				<li>Cb – rünksajupilved ehk äikesepilved (Cumulonimbus)</li>
+				<li>Sc – kihtrünkpilved</li>
+			</ul>
+			</li>
+
+
+
+	<p>Pilvede põhiliigid jaotatakse alaliikideks ja vormideks.</p>
+</section>
+	<section>
+		<h2>Polaarsed stratosfääripilved</h2>
+		<p>Polaarstratosfääripilved ehk polaarsed stratosfääripilved ehk pärlmutterpilved on talvisel ajal polaaralal stratosfääris 15–25 km kõrgusel tekkivad pilved. Need pilved põhjustavad osooniauke, sest soodustavad keemilisi reaktsioone, mis vabastavad kloori, aga kloor on osoonikihti lõhkuvate keemiliste reaktsioonide katalüsaator. Pilved võivad lisaks veele sisaldada hapete, eeskätt lämmastikhappe ja väävelhappe kristalle. Eriti madalatel temperatuuridel võivad kristallid moodustada jääkihi.</p>
+		<p>Suure kõrguse ja Maa pinna kõveruse tõttu saavad need pilved valgust altpoolt, horisondi tagant, ja peegeldavad selle maapinnale. Eriti eredad on nad enne koitu ja pärast eha. Nad on nähtavad märksa madalamatel laiustel kui tekivad, isegi laiustel 55°–60°.</p>
+</section>
+	<section>
+	<h2>Stratosfääripilvede liigitamine</h2>
+	<p>Stratosfäär on väga kuiv. Erinevalt troposfäärist moodustuvad seal harva pilved. Väga külmade polaartalvede ajal see siiski juhtub. Polaarsed stratosfääripilved moodustuvad temperatuuril allpool −78 °C. Põhjapoolkeral esinevad need vaid stratosfääri alumises osas. Moodustuda võivad mitut sorti pilved, mida klassifitseeritakse keemilise koostise ja aine oleku põhjal pilvedes. II tüüpi pilved ei kahjusta keskkonda, sest koosnevad ainult veest, ja need esinevad ainult Antarktikas.</p>
+	<ul>
+		<li>I tüüp koosneb happest ja veest.</li>
+		<li>Ia tüüp koosneb lämmastikhappe ja vee kristallidest.</li>
+		<li>Ib tüüp koosneb väävelhappe allajahutatud piiskadest.</li>
+		<li>II tüüp koosneb ainult jääkristallidest.</li>
+		<li>Stratosfääripilvi ei tohi segi ajada helkivate ööpilvedega, mis tekivad mesopausis 80–85 km kõrgusel.</li>
+	</ul>
+</section>
+
+
+

@@ -1,0 +1,12 @@
+section{
+	padding: 26px;
+}
+
+meter, progress{
+	width: 255px;
+	
+}
+
+#musicSlider{
+	width: 255px;
+}

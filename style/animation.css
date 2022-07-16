@@ -1,0 +1,123 @@
+/* reeglid pannakse kirja @ märgiga.. */
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* keyframe-i objektiga sidumine */
+
+.spinning {
+	animation-name: spin;
+	animation-duration: 6s;
+	/*ease  linear   ease-in   ease-out   ease-in-out*/
+	animation-timing-function: linear;
+	/* animation-delay: 2s; */
+
+	/* infinite // või kordade arv */
+	animation-iteration-count: infinite;
+
+	/* suund --> normal; reverse; alternate; alternate-reverse */
+	animation-direction: reverse;
+
+	/* anim, kas muudab asendit --> none; forwards; backwards; both*/
+	animation-fill-mode: both;
+
+	/* running, tötöab automaatselt. paused // js saab seda kergelt muuta */
+	animation-play-state: running;
+
+	/* liskas on veel hover */
+	/* ???? */
+}
+
+.truck_wheel {
+	animation-name: spin;
+	animation-duration: 1.8s;
+	/*ease  linear   ease-in   ease-out   ease-in-out*/
+	animation-timing-function: linear;
+	/* animation-delay: 2s; */
+
+	/* infinite // või kordade arv */
+	animation-iteration-count: infinite;
+
+	/* suund --> normal; reverse; alternate; alternate-reverse */
+	animation-direction: normal;
+
+	/* anim, kas muudab asendit --> none; forwards; backwards; both*/
+	animation-fill-mode: both;
+
+	/* running, tötöab automaatselt. paused // js saab seda kergelt muuta */
+	animation-play-state: running;
+
+	/* liskas on veel hover */
+	/* ???? */
+}
+
+/* paneb auto liikuma */
+@keyframes cartrip {
+	/* translate liigutab masinat */
+	0% {
+		transform: translate(-200px, 0px);
+	}
+	100% {
+		transform: translate(1300px, 10px);
+	}
+}
+
+.truckarea {
+	animation: cartrip 6s 1s linear infinite;
+}
+
+/* auto suitsemine */
+@keyframes smoking {
+	0% {
+		transform: translate(0, 0);
+		opacity: 0.5;
+		scale: 0.5;
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-800px, -100px);
+		scale: 40;
+	}
+}
+
+.smoke {
+	top: 355px;
+	left: 80px;
+	animation: smoking 3s ease-in-out infinite;
+}
+.smoke2 {
+	animation: smoking 3s ease-in-out infinite;
+	animation-delay: 0.5s;
+	top: 355px;
+	left: 80px;
+}
+.smoke3 {
+	top: 355px;
+	left: 80px;
+	animation: smoking 3s ease-in-out infinite;
+	animation-delay: 1s;
+}
+.smoke4 {
+	top: 355px;
+	left: 80px;
+	animation: smoking 3s ease-in-out infinite;
+	animation-delay: 1.5s;
+}
+.smoke5 {
+	top: 355px;
+	left: 80px;
+	animation: smoking 3s ease-in-out infinite;
+	animation-delay: 2s;
+}
+.smoke6 {
+	top: 355px;
+	left: 80px;
+	animation: smoking 3s ease-in-out infinite;
+	animation-delay: 1.75s;
+}

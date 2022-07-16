@@ -1,0 +1,182 @@
+body {
+	background-color: #DDFFDD;
+	font-family: verdana, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+main {
+	margin: 20px;
+	width: 80%;
+	counter-reset: figure;
+}
+
+figure {
+	counter-increment: figure;
+}
+
+figcaption::before {
+	content: "Joonis "counter(figure) " ";
+}
+
+/*defineerin loenduri*/
+section:nth-of-type(2) {
+	counter-reset: chapter;
+}
+
+h2 {
+	counter-increment: chapter;
+}
+
+
+section {
+	border: 5px solid #66FF66;
+	counter-reset: subchapter;
+	padding: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+	main {
+		margin: 10px;
+		width: 94%;
+	}
+
+	section {
+		padding: 10px;
+	}
+}
+
+@media print {
+	main {
+		margin: 0px;
+		width: 100%;
+	}
+
+	section {
+		border: none;
+		padding: 0px;
+	}
+
+	nav {
+		display: none;
+	}
+}
+
+h3 {
+	counter-increment: subchapter;
+}
+
+section img {
+	border: 5px solid white;
+}
+
+/*sisaldub otse sektsiooni sees, mitte tütarelemendi sees*/
+section>img {
+	border-radius: 20px;
+}
+
+/*otsene järgnevus*/
+figure+p {
+	color: #009900;
+}
+
+/*otsene järgnevus*/
+figure+p+p {
+	color: #999900;
+}
+
+/*lihtsalt järneb ...*/
+h3~p {
+	text-indent: 1cm;
+}
+
+/*atribuudi selektorid*/
+/*atribuudi olemasolu*/
+[title] {
+	line-height: 1.5;
+}
+
+/*atribuudi kindel väärtus*/
+[title="selgitus"] {
+	font-weight: bold;
+}
+
+/*väärtus sisaldab stringi     ^=  algab    $=   lõppeb   *=  lihtsalt sisaldab   */
+[id^="chapter"] {
+	background-color: rgba(255, 255, 255, .5);
+}
+
+/*keeleatribuut*/
+:lang(en) {
+	font-style: oblique;
+}
+
+/*lingi sihtkoht*/
+section:target {
+	background-color: #FFFFAA;
+}
+
+/*tühi*/
+td:empty {
+	background-color: pink;
+}
+
+/*järjekorranumbriga ... */
+h2:first-child {
+	color: #66FF66;
+}
+
+/*kõige esimene seda tüüpi*/
+section:first-of-type {
+	border-radius: 20px 20px 0px 0px;
+}
+
+/*kõige viimane seda tüüpi*/
+section:last-of-type {
+	border-radius: 0px 0px 20px 20px;
+}
+
+section:nth-of-type(3) {
+	border-width: 15px;
+}
+
+/*paarisarvulised*/
+section:nth-of-type(even) {
+	border-style: dashed;
+}
+
+/*esimese tähemärgi pseudoelement*/
+h1+p::first-letter,
+h2+p::first-letter,
+h3+p::first-letter {
+	color: red;
+	font-weight: 900;
+}
+
+
+
+/*elementide ette ja järgi sisu lisamise pseudoelemendid*/
+h1::before {
+	content: url("../../../../../media/pics/bullet/tlu_bullet.png") " "open-quote;
+}
+
+/*elementide ette ja järgi sisu lisamise pseudoelemendid*/
+h2::before {
+	content: url("../../../../../media/pics/bullet/tlu_bullet.png") " Peatükk "counter(chapter) " "open-quote;
+}
+
+section:first-of-type h2::before {
+	content: url("../../../../../media/pics/bullet/tlu_bullet.png") " "open-quote;
+}
+
+/*elementide ette ja järgi sisu lisamise pseudoelemendid*/
+h3::before {
+	content: url("../../../../../media/pics/bullet/tlu_bullet.png") " Alapeatükk "counter(chapter) "."counter(subchapter) " "open-quote;
+}
+
+h1::after,
+h2::after,
+h3::after {
+	content: close-quote;
+}

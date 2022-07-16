@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Veeb ja meediaelemendid</title>
+	<base target="_blank">
+	<link rel="stylesheet" type="text/css" href="style/general.css">
+	<script src="scripts/kino.js"></script>
+</head>
+<body>
+	<main>
+		<section id="video">
+			<h2>Videoklipi mängimine, subtiitrid</h2>
+			<video id="cinema" controls width="600">
+				<source src="http://greeny.cs.tlu.ee/~rinde/media/videos/IFI_reklaam_no_audio.mp4" type="video/mp4">
+				<track id="sub_en" kind="subtitles" label="Subtitles in English" srclang="en" src="http://greeny.cs.tlu.ee/~rinde/media/videos/subtitles/subtitles_en.vtt">
+				<track id="sub_et" kind="subtitles" label="Eestikeelsed subtiitrid" srclang="et" src="http://greeny.cs.tlu.ee/~rinde/media/videos/subtitles/subtitles_et.vtt">
+				<track id="sub_fi" kind="subtitles" label="Suomen kieli" srclang="fi" src="http://greeny.cs.tlu.ee/~rinde/media/videos/subtitles/subtitles_fi.vtt">
+			</video>
+			<br>
+			<p>Tekst: <span id="subtitlePlace"></span></p>
+			<br>
+			<button id="subtitleBtn" type="button">Vaheta subtiitrite keel</button>
+			<h3>CSS filtrid</h3>
+			<label for="brightnessBtn">Heledus: </label>
+			<input id="brightnessBtn" type="range" value="100" min="0" max="1000">
+			<br>
+			<label for="contrastBtn">Kontrast: </label>
+			<input id="contrastBtn" type="range" value="100" min="0" max="1000">
+			<br>
+			<label for="saturationBtn">Värviküllastus: </label>
+			<input id="saturationBtn" type="range" value="100" min="0" max="1000">
+			<br>
+			<label for="blurBtn">Hägustamine: </label>
+			<input id="blurBtn" type="range" value="0" min="0" max="20">
+			<br>
+		</section>
+	</main>
+</body>
+</html>

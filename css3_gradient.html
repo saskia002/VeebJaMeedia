@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<!--   viewport annab mõõtühikud  vw - 1% viewport laiusest, vh, vmin - lühema pikkuse 1% ja vmax - suurema pikkuse 1%  -->
+<script src="scripts/livejs.js"></script>
+<link rel="stylesheet" type="text/css" href="style/layout.css">
+<link rel="stylesheet" type="text/css" href="style/respon-layout.css">
+<link rel="stylesheet" type="text/css" href="style/gradient.css">
+<title>CSS gradient</title>
+
+</head>
+<body>
+	<div class="pagecontainer">
+		<header class="header">
+			<h1>Astmiktäide (gradient)</h1>
+		</header>
+		<nav>
+			<p><a href="#linear">Lineaarne astmiktäide</a></p>
+			<p><a href="#linear_repeating">Korduv lineaarne astmiktäide</a></p>
+			<p><a href="#conic">Kooniline astmiktäide</a></p>
+			<p><a href="#conic_repeating">Korduv kooniline astmiktäide</a></p>
+			<p><a href="#radial">Radiaalne astmiktäide</a></p>
+			<p><a href="#radial_repeating">Korduv radiaalne astmiktäide</a></p>
+		</nav>
+		<main>
+			<section id="linear">
+				<h2>Lineaarne astmiktäide</h2>
+				<div class="maincontainer">
+					<div class="examplecontainer">
+						<h3>Kahe värvi lineaarne astmiktäide</h3>
+						<div class="example two_color_linear_vertical">	
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kahe värvi lineaarne astmiktäide, paremale</h3>
+						<div class="example two_color_linear_horizontal">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kahe värvi lineaarne astmiktäide, vasakule</h3>
+						<div class="example two_color_linear_horizontal2">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kahe värvi lineaarne astmiktäide, diagonaalne</h3>
+						<div class="example two_color_linear_diagonal">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kahe värvi lineaarne astmiktäide, 20 kraadi nurk</h3>
+						<div class="example two_color_linear_angle">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi lineaarne astmiktäide</h3>
+						<div class="example three_color_linear_vertical">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi lineaarne astmiktäide, fikseeritud positsioon mustal</h3>
+						<div class="example three_color_linear_vertical_pos1">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi lineaarne astmiktäide, fikseeritud positsioon mustal ja valgel</h3>
+						<div class="example three_color_linear_vertical_pos2">
+						</div>
+					</div>
+						
+					<div class="examplecontainer">
+						<h3>Kolme värvi lineaarne astmiktäide, kaks fikseeritud positsiooni mustal</h3>
+						<div class="example three_color_linear_vertical_pos3">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi lineaarne astmiktäide, fikseeritud positsioonid igal värvil, mustal 2</h3>
+						<div class="example three_color_linear_vertical_pos4">
+						</div>
+					</div>
+				</div>
+			</section>
+				
+			<section id="linear_repeating">
+				<h2>Korduv lineaarne astmiktäide</h2>
+				<div class="maincontainer">
+					<div class="examplecontainer">
+						<h3>Kolme värvi lineaarne astmiktäide, korduv, määratud valge positsiooniga</h3>
+						<div class="example three_color_linear_repeating1">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi lineaarne astmiktäide, korduv, igal värvil 2 fikseeritud positsiooni (ääred)</h3>
+						<div class="example three_color_linear_repeating2">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi lineaarne astmiktäide, korduv, igal värvil 2 fikseeritud positsiooni (ääred), 20 kraadi nurk</h3>
+						<div class="example three_color_linear_repeating3">
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="conic">
+				<h2>Kooniline astmiktäide</h2>
+				<div class="maincontainer">
+					<div class="examplecontainer">
+						<h3>Kahe värvi kooniline astmiktäide</h3>
+						<div class="example two_color_conic">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kahe värvi kooniline astmiktäide, alustades 45 kraadise nurga all</h3>
+						<div class="example two_color_conic_from_angle">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kahe värvi kooniline astmiktäide, määratud keskpunktiga</h3>
+						<div class="example two_color_conic_at">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kahe värvi kooniline astmiktäide, alustades 45 kraadise nurga all, määratud keskpunktiga</h3>
+						<div class="example two_color_conic_from_angle_at">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi kooniline astmiktäide</h3>
+						<div class="example three_color_conic">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi kooniline astmiktäide, fikseeritud nurgad</h3>
+						<div class="example three_color_conic_angles1">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi kooniline astmiktäide, igal värvil kaks fikseeritud nurka</h3>
+						<div class="example three_color_conic_angles2">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi kooniline astmiktäide, igal värvil kaks fikseeritud nurka, alustades -60 kraadise nurga all</h3>
+						<div class="example three_color_conic_angles3">
+						</div>
+					</div>
+				</div>
+			</section>
+				
+			<section id="conic_repeating">
+				<h2>Korduv kooniline astmiktäide</h2>
+				<div class="maincontainer">
+					<div class="examplecontainer">
+						<h3>Kolme värvi kooniline astmiktäide, korduv, määratud valge nurgaga</h3>
+						<div class="example three_color_conic_repeating1">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi kooniline astmiktäide, korduv, alustades 45 kraadise nurga all</h3>
+						<div class="example three_color_conic_repeating2">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi kooniline astmiktäide, korduv, määratud valge nurgaga, määratud keskpunktiga</h3>
+						<div class="example three_color_conic_repeating3">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi kooniline astmiktäide, korduv, kõigil värvidel üks fikseeritud nurk</h3>
+						<div class="example three_color_conic_repeating4">
+						</div>
+					</div>
+					
+					<div class="examplecontainer">
+						<h3>Kolme värvi kooniline astmiktäide, korduv, kõigil värvidel kaks fikseeritud nurka</h3>
+						<div class="example three_color_conic_repeating5">
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="radial">
+				<h2>Radiaalne astmiktäide</h2>
+				<div class="maincontainer">
+					<div class="examplecontainer for_ellipse">
+						<h3>Kahe värvi radiaalne astmiktäide</h3>
+						<div class="example ellipse two_color_radial">
+						</div>
+					</div>	
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide</h3>
+						<div class="example ellipse three_color_radial">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, valgel värvil fikseeritud positsioon</h3>
+						<div class="example ellipse three_color_radial_pos1">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, fikseeritud positsioon kõigil värvidel</h3>
+						<div class="example ellipse three_color_radial_pos2">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, ring, fikseeritud positsioon kõigil värvidel</h3>
+						<div class="example ellipse three_color_radial_circle">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, fikseeritud positsioon kõigil värvidel, määratud keskpunktiga</h3>
+						<div class="example ellipse three_color_radial_at">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, kõigil värvidel kaks fikseeritud positsiooni, määratud keskpunktiga</h3>
+						<div class="example ellipse three_color_radial_circle_pos">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, kõigil värvidel kaks fikseeritud positsiooni, määratud keskpunktiga, suurus lähima servani (selguseks lisatud neljas, hall värv)</h3>
+						<div class="example ellipse border three_color_radial_pos_size1">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, ring, kõigil värvidel kaks fikseeritud positsiooni, määratud keskpunktiga, suurus lähima servani (selguseks lisatud neljas, hall värv)</h3>
+						<div class="example ellipse border three_color_radial_pos_size1_circle">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, kõigil värvidel kaks fikseeritud positsiooni, määratud keskpunktiga, suurus lähima nurgani (selguseks lisatud neljas, hall värv)</h3>
+						<div class="example ellipse border three_color_radial_pos_size2">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, kõigil värvidel kaks fikseeritud positsiooni, määratud keskpunktiga, suurus kaugeima servani (selguseks lisatud neljas, hall värv)</h3>
+						<div class="example ellipse border three_color_radial_pos_size3">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, kõigil värvidel kaks fikseeritud positsiooni, määratud keskpunktiga, suurus kaugeima nurgani (selguseks lisatud neljas, hall värv)</h3>
+						<div class="example ellipse border three_color_radial_pos_size4">
+						</div>
+					</div>
+				</div>
+			</section>
+				
+			<section id="radial_repeating">
+				<h2>Korduv radiaalne astmiktäide</h2>
+				<div class="maincontainer">
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, korduv, valge positsiooniga</h3>
+						<div class="example ellipse three_color_radial_repeating1">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, korduv, valge positsiooniga, määratud keskpunktiga</h3>
+						<div class="example ellipse three_color_radial_repeating2">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, korduv, igal värvil fikseeritud positsioon</h3>
+						<div class="example ellipse three_color_radial_repeating3">
+						</div>
+					</div>
+					
+					<div class="examplecontainer for_ellipse">
+						<h3>Kolme värvi radiaalne astmiktäide, korduv, igal värvil kaks fikseeritud positsiooni</h3>
+						<div class="example ellipse three_color_radial_repeating4">
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		</main>
+	</div>
+</body>
+</html>
+
+
+
+
+
+

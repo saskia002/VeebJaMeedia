@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100%;
+}
+
+hr {
+  margin: 2%;
+}
+
+p {
+  font-size: 1.15em;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+section[id="media"]{
+  display: none;
+}
+
+
+nav,
+header,
+footer,
+audio,
+video {
+  display: none;
+}
+
+.center-pic {
+  text-align: center;
+}
+
+#img-border {
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  border-left-width: 30px;
+  border-right-width: 20px;
+  border-bottom-width: 10px;
+  border-top-width: 3px;
+}
+
+#stage {
+  width: 1188px;
+  height: 577px;
+  border: 1px solid black;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+#stage * {
+  position: absolute;
+}
+
+#windmill {
+  width: 308px;
+  height: 270px;
+  top: 20px;
+  transform: scale(0.5);
+  right: 70px;
+}
+
+#propeller {
+  top: -90px;
+}
+
+.truckarea {
+  width: 192px;
+  height: 86px;
+  top: 400px;
+}
+
+.truck {
+  width: 958px;
+  height: 429px;
+  transform-origin: top left;
+  transform: scale(0.2);
+}
+
+.truck_wheel {
+  bottom: -45px;
+}
+
+.truck_front_wheel {
+  right: 5px;
+}
+
+.truck_rear_wheel {
+  left: 85px;
+}

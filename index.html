@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>veeb ja meedia</title>
     <script src="scripts/livejs.js"></script>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="scripts/general.js" defer></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="style/print.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 1000px)" href="style/style-max1000.css">
 
     <!-- ss ei pea panema kõigile a elemendile blank target -->
     <!-- _self (leht asnedatakse); _blank (uuel vahelehel) -->
@@ -17,6 +20,18 @@
 </head>
 
 <body>
+    <nav class="nav_bar">
+        <ul>
+            <li><a href="index.html" target="_self">Avaleht</a></li>
+            <li><a href="page_animatsion.html" target="_self">Animatsioon</a></li>
+            <li><a href="page_kell.html" target="_self">Kell</a></li>
+            <li><a href="page_heli.html" target="_self">Heli</a></li>
+            <li><a href="page_graafika.html" target="_self">graafika</a></li>
+            <li><a href="page_climate.html" target="_self">kliima</a></li>
+            <!-- lehel liikumine -->
+            <!-- <li><a href="#media" target="_self">Media</a></li> -->
+        </ul>
+    </nav>
 
     <header>
         <!--pildi lisamine  -->
@@ -26,16 +41,7 @@
             <summary>see leht on jama</summary>
             <p>Õpetöö teema... igno pls.</p>
         </details>
-
-        <nav>
-            <ul>
-                <li><a href="https://www.tlu.ee/">TLU</a></li>
-                <li><a href="https://forte.delfi.ee/" target="_self">delfi forte</a></li>
-                <!-- lehel liikumine -->
-                <li><a href="#media" target="_self">Media</a></li>
-            </ul>
-        </nav>
-
+    
     </header>
 
     <!-- main elment on pea kontendile, korraga võib nähtaval olla yks  -->
@@ -104,7 +110,18 @@
                     <source src="http://greeny.cs.tlu.ee/~rinde/media/videos/haridusvalgustab.mp4" type="video/mp4">
                     Kahjuks teie veebibrauser ei toeta HTML5 video elementi!
                 </video>
-                <p></p>
+
+
+                <h3>Pildid</h3>
+                <div>
+                    <img src="http://greeny.cs.tlu.ee/~rinde/media/photos/loading_600x450.png" alt="Tallinn" id="tlnPic">
+
+                    <!-- <img src="http://greeny.cs.tlu.ee/~rinde/media/photos/tallinn600x450/tln_1.JPG" alt="pilt tallinnast" class="semitransparent">
+                    <img src="http://greeny.cs.tlu.ee/~rinde/media/photos/tallinn600x450/tln_7.JPG" alt="pilt tallinnast" class="transform1">
+                    <img src="http://greeny.cs.tlu.ee/~rinde/media/photos/tallinn600x450/tln_23.JPG" alt="pilt tallinnast" class="orig_bottomleft transform2">
+                    <img src="http://greeny.cs.tlu.ee/~rinde/media/photos/tallinn600x450/tln_25.JPG" alt="pilt tallinnast" class="orig_bottomleft transform1 transform3"> -->
+                </div>
+                
             </div>
         </section>
 

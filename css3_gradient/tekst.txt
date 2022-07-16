@@ -1,0 +1,12 @@
+<nav>
+			<p><a href="linear.html">Lineaarne astmiktäide</a></p>
+			<p><a href="linear_repeat.html">Korduv lineaarne astmiktäide</a></p>
+			<p><a href="conic.html">Kooniline astmiktäide</a></p>
+			<p><a href="conic_repeat.html">Korduv kooniline astmiktäide</a></p>
+			<p><a href="radial.html">Radiaalne astmiktäide</a></p>
+			<p><a href="radial_repeat.html">Korduv radiaalne astmiktäide</a></p>
+			<p><a href="index.html">Avaleht</a></p>
+		</nav>
+        
+        
+selle paned igale lehele ja ss vahetyab nii lehti

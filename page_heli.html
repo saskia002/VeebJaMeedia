@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/audio.css">
+    <link rel="stylesheet" href="style/style.css">
+	<script src="scripts/livejs.js"></script>
+	<script src="scripts/audio.js" defer></script>
+    <title>Kell</title>
+</head>
+<body>
+	<nav class="nav_bar">
+        <ul>
+            <li><a href="index.html" target="_self">Avaleht</a></li>
+            <li><a href="page_animatsion.html" target="_self">Animatsioon</a></li>
+            <li><a href="page_kell.html" target="_self">Kell</a></li>
+            <li><a href="page_heli.html" target="_self">Heli</a></li>
+        </ul>
+    </nav>
+
+    <main>
+		<section id="audio">
+			<h2>Heli mängimine:</h2>
+			
+			<!-- <meter id="musicMeter" min="0" hidden></meter> <-- value="20" max="100" low="25" optimum -->
+			<!-- meeter sisse soovitatkse väärtus mis sinna tegelt läheks -->
+			
+			<!-- <br>
+			<progress id="musicProgress" value="0"  ></progress> --> 
+			
+			<br>
+			<input type="range" id="musicSlider" min="0" step="0.01" value="0">
+			
+			<br>
+			<div id="musicPos">00:00.00</div>
+			<button id="musicBtn" type="button">Oota!</button>
+			
+			<br>
+			<label for="volBtn">Heli tugevus:</label>
+			<input type="range" name="volBtn" id="volBtn" min="0" max="1" step="0.01" value="0.7">
+			
+			<br>
+			<label for="speedBtn">Esitus kiirus:</label>
+			<input type="range" name="speedBtn" id="speedBtn" min="0.25" max="2" step="0.01" value="1">
+			
+			
+			
+			
+		</section>
+	</main>
+</body>
+</html>

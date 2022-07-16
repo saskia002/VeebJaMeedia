@@ -1,0 +1,172 @@
+.two_color_linear_vertical {
+	background-image: linear-gradient(#0072CE, #FFFFFF);
+}
+
+.two_color_linear_horizontal {
+	background-image: linear-gradient(to right, #0072CE, #FFFFFF);
+}
+
+.two_color_linear_horizontal2 {
+	background-image: linear-gradient(to left, #0072CE, #FFFFFF);
+}
+
+.two_color_linear_diagonal {
+	background-image: linear-gradient(to top right, #0072CE, #FFFFFF);
+}
+
+.two_color_linear_angle {
+	background-image: linear-gradient(20deg, #0072CE, #FFFFFF);
+}
+
+.three_color_linear_vertical {
+	background-image: linear-gradient(#0072CE, #000000, #FFFFFF);
+}
+.three_color_linear_vertical_pos1 {
+	background-image: linear-gradient(#0072CE, #000000 20%, #FFFFFF);
+}
+
+.three_color_linear_vertical_pos2 {
+	background-image: linear-gradient(#0072CE, #000000 20%, #FFFFFF 40%);
+}
+
+.three_color_linear_vertical_pos3 {
+	background-image: linear-gradient(#0072CE, #000000 20%, #000000 80%, #FFFFFF);
+}
+
+.three_color_linear_vertical_pos4 {
+	background-image: linear-gradient(#0072CE 33%, #000000 33%, #000000 66%, #FFFFFF 66%);
+}
+
+.three_color_linear_repeating1 {
+	background-image: repeating-linear-gradient(#0072CE, #000000, #FFFFFF 15%);
+}
+
+.three_color_linear_repeating2 {
+	background-image: repeating-linear-gradient(#0072CE 0%, #0072CE 5%, #000000 5%, #000000 10%, #FFFFFF 10%, #FFFFFF 15%);
+}
+
+.three_color_linear_repeating3 {
+	background-image: repeating-linear-gradient(20deg, #0072CE 0%, #0072CE 5%, #000000 5%, #000000 10%, #FFFFFF 10%, #FFFFFF 15%);
+}
+
+.two_color_conic {
+	background-image: conic-gradient(#0072CE, #FFFFFF);
+}
+
+.two_color_conic_from_angle {
+	background-image: conic-gradient(from 45deg, #0072CE, #FFFFFF);
+}
+
+.two_color_conic_at {
+	background-image: conic-gradient(at 75% 25%, #0072CE, #FFFFFF);
+}
+
+.two_color_conic_from_angle_at {
+	background-image: conic-gradient(from 45deg at 75% 25%, #0072CE, #FFFFFF);
+}
+
+.three_color_conic {
+	background-image: conic-gradient(#0072CE, #000000, #FFFFFF);
+}
+
+.three_color_conic_angles1 {
+	background-image: conic-gradient(#0072CE 180deg, #000000 270deg, #FFFFFF 300deg);
+}
+
+
+.three_color_conic_angles2 {
+	background-image: conic-gradient(#0072CE 0deg, #0072CE 120deg, #000000 120deg, #000000 240deg, #FFFFFF 240deg, #FFFFFF 360deg);
+}
+
+.three_color_conic_angles3 {
+	background-image: conic-gradient(from 45deg at 25% 25%, #0072CE 0deg, #0072CE 120deg, #000000 120deg, #000000 240deg, #FFFFFF 240deg, #FFFFFF 360deg);
+}
+
+.three_color_conic_repeating1 {
+	background-image: repeating-conic-gradient(#0072CE, #000000, #FFFFFF 60deg);
+}
+
+.three_color_conic_repeating2 {
+	background-image: repeating-conic-gradient(from 45deg, #0072CE, #000000, #FFFFFF 60deg);
+}
+
+.three_color_conic_repeating3 {
+	background-image: repeating-conic-gradient(at 75% 25%, #0072CE, #000000, #FFFFFF 60deg);
+}
+
+.three_color_conic_repeating4 {
+	background-image: repeating-conic-gradient(#0072CE 20deg, #000000 40deg, #FFFFFF 60deg);
+}
+
+.three_color_conic_repeating5 {
+	background-image: repeating-conic-gradient(#0072CE 0deg, #0072CE 20deg, #000000 20deg, #000000 40deg, #FFFFFF 40deg, #FFFFFF 60deg);
+}
+
+.two_color_radial {
+	background-image: radial-gradient(#0072CE, #FFFFFF);
+}
+
+.three_color_radial {
+	background-image: radial-gradient(#0072CE, #000000, #FFFFFF);
+}
+
+.three_color_radial_pos1 {
+	background-image: radial-gradient(#0072CE, #000000, #FFFFFF 50%);
+}
+
+.three_color_radial_pos2 {
+	background-image: radial-gradient(#0072CE 10%, #000000 40%, #FFFFFF 50%);
+}
+
+
+.three_color_radial_circle {
+	background-image: radial-gradient(circle, #0072CE 10%, #000000 40%, #FFFFFF 50%);
+}
+
+.three_color_radial_at {
+	background-image: radial-gradient(at 90% 10%, #0072CE 10%, #000000 40%, #FFFFFF 50%);
+}
+
+.three_color_radial_circle_pos {
+	background-image: radial-gradient(at 80% 80%, #0072CE 0%, #0072CE 20%, #000000 20%, #000000 40%, #FFFFFF 40%, #FFFFFF 50%);
+}
+
+.three_color_radial_pos_size1 {
+	background-image: radial-gradient(closest-side at 80% 80%, #0072CE 0%, #0072CE 20%, #000000 20%, #000000 40%, #FFFFFF 40%, #FFFFFF 99%, #CCCCCC 99%);
+}
+
+
+.three_color_radial_pos_size1_circle {
+	background-image: radial-gradient(circle closest-side at 80% 80%, #0072CE 0%, #0072CE 20%, #000000 20%, #000000 40%, #FFFFFF 40%, #FFFFFF 99%, #CCCCCC 99%);
+}
+
+.three_color_radial_pos_size2 {
+	background-image: radial-gradient(closest-corner at 80% 80%, #0072CE 0%, #0072CE 20%, #000000 20%, #000000 40%, #FFFFFF 40%, #FFFFFF 99%, #CCCCCC 99%);
+}
+
+.three_color_radial_pos_size3 {
+	background-image: radial-gradient(farthest-side at 80% 80%, #0072CE 0%, #0072CE 20%, #000000 20%, #000000 40%, #FFFFFF 40%, #FFFFFF 99%, #CCCCCC 99%);
+}
+
+
+.three_color_radial_pos_size4 {
+	background-image: radial-gradient(farthest-corner at 80% 80%, #0072CE 0%, #0072CE 20%, #000000 20%, #000000 40%, #FFFFFF 40%, #FFFFFF 99%, #CCCCCC 99%);
+}
+
+.three_color_radial_repeating1 {
+	background-image: repeating-radial-gradient(#0072CE, #000000, #FFFFFF 30%);
+}
+
+.three_color_radial_repeating2 {
+	background-image: repeating-radial-gradient(at 80% 80%, #0072CE, #000000, #FFFFFF 30%);
+}
+
+.three_color_radial_repeating3 {
+	background-image: repeating-radial-gradient(#0072CE 10%, #000000 20%, #FFFFFF 30%);
+}
+
+.three_color_radial_repeating4 {
+	background-image: repeating-radial-gradient(#0072CE 0%, #0072CE 10%, #000000 10%, #000000 20%, #FFFFFF 20%, #FFFFFF 30%);
+}
+
+

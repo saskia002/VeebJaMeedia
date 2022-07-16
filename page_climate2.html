@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style/audio.css"> -->
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+	<!-- <script src="scripts/livejs.js"></script> -->
+	
+	<script src="./scripts/climate.js" defer></script>
+	<script src="./scripts/kliima.js" defer></script>
+	<!-- <script src="./scripts/kliima2.js" defer></script> -->
+    <title>Eesti kliima</title>
+</head>
+<body>
+	<nav class="nav_bar">
+        <ul>
+            <li><a href="index.html" target="_self">Avaleht</a></li>
+        </ul>
+    </nav>
+
+    <main>
+		<section id="kliima">
+			<h2>Eesti keskmise temperatuuri graafik JS-iga:</h2>			
+			<canvas id="canvas1" width="1000" height="400">
+				Kahjuks Teie brauser ei toeta HTML5 canvas elementi!
+			</canvas>		
+			
+			<h2>Eesti sademete graafik JS-iga:</h2>			
+			<canvas id="canvas2" width="1000" height="400">
+				Kahjuks Teie brauser ei toeta HTML5 canvas elementi!
+			</canvas>
+			<br>
+			<label for="widthBtn">Joone paksus:</label>	
+			<input type="number" id="widthBtn" min="1" max="200" value="1">
+			
+			<label for="colorVal">Joone värv:</label>
+			<input type="color" id="colorVal">
+			
+			<label for="alphaVal">Pintsli joone tugevus:</label>
+			<input type="range" id="alphaVal" min="0" max="1" value="1" step="0.01">
+			
+			<label for="globalAlphaVal">Joone läbipastvus:</label>
+			<input type="range" id="globalAlphaVal" min="0" max="1" value="1" step="0.01">
+			
+			<a id="saveBtn" download="joonistus.png"><button type="button">Salvesta pilt</button></a>
+		</section>
+	</main>
+</body>
+</html>
+
+<!-- 
+Kodune ülesanne 5
+
+Täiendate kliima lehte teise canvas elemendiga (teine id, teine kontekst)
+Sellele tekitate kas sademete või päikesepaiste graafiku tulpdiagrammina.
+Tulpade ümber peen joon, täitevärv sõltub väärtusest, mida suurem väärtus, seda tumedam/intensiivsem.
+Graafikule peab saama ise midagi joonistada (jooni või näiteks ringe ümber huvipakkuva koha) ja seda kõike pildina salvestada. -->
+

@@ -1,0 +1,60 @@
+.clockArea {
+	width: 272px;
+	height: 473px;
+	overflow: hidden;
+}
+
+.clock {
+	position: relative;
+	width: 554px;
+	height: 945px;
+	transform-origin: 0% 0%;
+	transform: scale(.5);
+}
+
+.clock * {
+	position: absolute;
+}
+
+.clockface {
+	width: 369px;
+	height: 369px;
+	left: 92px;
+	top: 90px;
+}
+
+.clockhand {
+	left: 158px;
+	top: 10px;
+	transform-origin: 50% 176px;
+}
+
+.clockwork {
+	animation-name: spin;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.clocksec {
+	animation-duration: .5s;
+}
+
+.clockmin {
+	animation-duration: 30s;
+}
+
+.clockhour {
+	animation-duration: 360s;
+}
+
+.pendulus {
+	left: 194px;
+	top: 400px;
+	transform-origin: 50% 0%;
+	animation: swing 1s ease-in-out infinite alternate;
+}
+
+@keyframes swing {
+	0% {transform: rotate(-30deg);}
+	100% {transform: rotate(30deg);}	
+}
